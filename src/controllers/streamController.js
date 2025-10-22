@@ -1,6 +1,6 @@
-import { validationError } from '../utils/errors';
-import { getServers } from './serversController';
-import { extractStream } from '../extractor/extractStream';
+import { validationError } from '../utils/errors.js';
+import { getServers } from './serversController.js';
+import { extractStream } from '../extractor/extractStream.js';
 
 const streamController = async (c) => {
   let { id, server = 'HD-1', type = 'sub' } = c.req.query();

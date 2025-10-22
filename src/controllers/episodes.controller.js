@@ -1,7 +1,7 @@
 import axios from 'axios';
-import { validationError } from '../utils/errors';
-import config from '../config/config';
-import { extractEpisodes } from '../extractor/extractEpisodes';
+import { validationError } from '../utils/errors.js';
+import config from '../config/config.js';
+import { extractEpisodes } from '../extractor/extractEpisodes.js';
 
 const episodesController = async (c) => {
   const id = c.req.param('id');
@@ -19,7 +19,7 @@ const episodesController = async (c) => {
         ...config.headers,
       },
     });
-    
+
     const response = extractEpisodes(data.html);
     return response;
   } catch (err) {

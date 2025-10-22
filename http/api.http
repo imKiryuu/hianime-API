@@ -1,5 +1,5 @@
 ### Base URL
-@baseUrl = http://localhost:3030/api/v1
+@baseUrl = https://highanime-api.vercel.app/api/v1
 
 ### 1. Home
 GET {{baseUrl}}/home

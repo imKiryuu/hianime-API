@@ -1,4 +1,6 @@
-const base_url = process.env.BASE_URL ? process.env.BASE_URL : 'http://localhost:3030';
+const base_url = process.env.BASE_URL
+  ? process.env.BASE_URL
+  : 'https://highanime-api.vercel.app/api/v1';
 
 const hianimeApiDocs = {
   openapi: '3.0.0',
